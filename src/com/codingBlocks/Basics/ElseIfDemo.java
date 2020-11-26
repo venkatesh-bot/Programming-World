@@ -1,4 +1,4 @@
-package com.codingBlocks;
+package com.codingBlocks.Basics;
 
 import java.util.Scanner;
 
