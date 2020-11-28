@@ -1,0 +1,15 @@
+Number System And Data Types:
+1. Decimal Number System -> Base10, from 0 to 9.
+2. Binary Number System -> Base2, 0 and 1.
+3. Octal Number System -> Base8, from 0 to 7.
+
+  ex : (32)10 = (?)2
+  (37)10 = (?)8
+
+  Data Types :
+  1. Primitive DT (allocated in Stack area)
+  2. Non-Primitive DT (allocated in Heap area)
+
+
+
+
