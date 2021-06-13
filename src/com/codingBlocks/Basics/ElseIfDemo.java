@@ -9,9 +9,9 @@ public class ElseIfDemo {
 
         if (age <= 12) {
             System.out.println("He/she is a child");
-        } else if (age >= 13 && age <= 19) {
+        } else if (age <= 19) {
             System.out.println("He/She is a teenager");
-        } else if (age >= 20 && age <= 60) {
+        } else if (age <= 60) {
             System.out.println("He/She is an Adult");
         } else {
             System.out.println("He/She is a senior");

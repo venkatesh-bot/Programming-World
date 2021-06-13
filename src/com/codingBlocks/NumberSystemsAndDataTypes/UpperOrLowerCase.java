@@ -1,4 +1,4 @@
-package com.codingBlocks.numberSystemsAndDataTypes;
+package com.codingBlocks.NumberSystemsAndDataTypes;
 
 import java.util.Scanner;
 

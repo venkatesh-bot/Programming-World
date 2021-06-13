@@ -1,6 +1,4 @@
-package com.codingBlocks.numberSystemsAndDataTypes;
-
-import java.util.Scanner;
+package com.codingBlocks.NumberSystemsAndDataTypes;
 
 public class TemperatureConverter {
     public static void main(String[] args) {
