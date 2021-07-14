@@ -8,6 +8,7 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
@@ -16,7 +17,14 @@ import java.util.concurrent.TimeUnit;
 
 public class TokenDemo {
     private final Map<String, UserBean> activeSession = new ConcurrentHashMap<>();
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
+        Map<String, Date> jwtExpiryTime = new HashMap<>();
+        jwtExpiryTime.put("Test1", new Date());
+        jwtExpiryTime.put("Test2", new Date());
+        jwtExpiryTime.put("Test3", new Date());
+        System.out.println(jwtExpiryTime);
+        jwtExpiryTime.remove("Test2");
+        System.out.println(jwtExpiryTime);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd,yyyy HH:mm:ss");
         System.out.println("start time  --> " + simpleDateFormat.format(new Date(System.currentTimeMillis())));
         TokenService tokenService = new TokenService();
@@ -36,7 +44,6 @@ public class TokenDemo {
         JWTVerifier scanner = JWT.require(Algorithm.HMAC256("tsg")).build();
         System.out.println(scanner);
         System.out.println(activeSession);
-        //JWT ticketInfo = (JWT) JWTVerifier.verify("");
         method2();
     }
 
